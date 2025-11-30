@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VSP Group</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #0d0d0d; color: #fff; }
+
+    /* HEADER */
+    header {
+      width: 100%;
+      padding: 25px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      position: fixed;
+      top: 0;
+      left: 0;
+      backdrop-filter: blur(6px);
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #4da6ff;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      background: url('vspbanner.png') center/cover no-repeat;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      font-weight: 900;
+      text-shadow: 0px 0px 20px #000;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 22px;
+      opacity: 0.95;
+      max-width: 700px;
+      color: #080075;
+    }
+
+    .btn {
+      margin-top: 35px;
+      padding: 15px 35px;
+      background: #4da6ff;
+      border-radius: 8px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1a8cff;
+    }
+
+    /* SEÇÕES */
+    section {
+      padding: 80px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      font-size: 42px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .desc {
+      text-align: center;
+      font-size: 18px;
+      opacity: 0.85;
+      margin-bottom: 50px;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #4da6ff;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card p {
+      font-size: 15px;
+      opacity: 0.8;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #000;
+      margin-top: 60px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">VSP</div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>VSP Group</h1>
+    <p>O VSP Group é pioneiro quando se trata de "Grupos que fazem Roleplays de Roblox". Nós fazemos roleplays de Roblox com o objetivo de manter o realismo, mas também a imersão do jogador</p>
+    <a class="btn" href="#sobre">Conhecer mais</a>
+  </div>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <h2 class="title">O que é o VSP Group?</h2>
+    <p class="desc">Somos um grupo dedicado a criar roleplays, universos, sistemas e experiências completas.</p>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <h2 class="title">Projetos do VSP</h2>
+    <p class="desc">Conheça alguns dos projetos em desenvolvimento pelo grupo.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>VSP Roleplay</h3>
+        <p>Vida em São Paulo Roleplay foi o primeiro servidor de Roleplay criado pela VSP Group.</p>
+      </div>
+
+      <div class="card">
+        <h3>VSP Market</h3>
+        <p>VSP Market é a área dedicada a venda de produtos em nosso grupo!</p>
+      </div>
+
+      <div class="card">
+        <h3>VSP Studios</h3>
+        <p>VSP Studios é a área onde são feitos os Roleplays e servidores do Roblox, incluindo os mapas, servidores de Discord e até mesmo documentos que regem os jogos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <h2 class="title">Contato</h2>
+    <p class="desc">Entre em contato para parcerias, projetos ou dúvidas sobre o VSP Group.</p>
+    <p style="text-align:center; font-size:20px;">
+      Discord: <strong>discord.gg/vidaemsp OU https://discord.gg/kQTtjtzCJR</strong>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>© 2025 VSP Group — Todos os Direitos Reservados.</footer>
+
+</body>
+</html>
